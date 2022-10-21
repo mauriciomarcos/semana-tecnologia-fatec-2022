@@ -11,7 +11,6 @@ namespace ContatosAPI.Configs
     {
         public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
-
             var appSettings = ConfigurarClasseAppSettings(services, configuration);
 
             #region | Configuração da Autenticação - JWT com suporte para JWT Bearer|
