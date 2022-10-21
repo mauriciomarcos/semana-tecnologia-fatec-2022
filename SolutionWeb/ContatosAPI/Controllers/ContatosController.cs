@@ -1,5 +1,6 @@
 ﻿using Domains.Classes;
 using Domains.Interfaces.Repositorio;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace ContatosAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Produces("application/json")]
     [Route("api/v1/[controller]")]
